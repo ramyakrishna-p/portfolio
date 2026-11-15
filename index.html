@@ -83,6 +83,10 @@
         <img src="posters/linear-b-cell-epitope-prediction.png" alt="Linear B-Cell Epitope Prediction poster">
         <div class="card-body"><h3>B-Cell Epitope Prediction</h3><p>ML &bull; Data Mining &bull; ESM-2</p><span>Balanced Accuracy 0.7812 &bull; ROC-AUC 0.8503</span></div>
       </article>
+      <article class="card" onclick="openModal(7)" tabindex="0">
+        <img src="posters/ecommerce-sales-forecasting-inventory-analytics.png" alt="E-commerce Sales Forecasting and Inventory Analytics poster">
+        <div class="card-body"><h3>E-commerce Sales Forecasting</h3><p>Data Analytics &bull; Forecasting</p><span>MAPE 12.17% &bull; £1.12M 28-day forecast</span></div>
+      </article>
     </div>
   </section>
 
@@ -105,6 +109,10 @@
       <article class="card" onclick="openModal(3)" tabindex="0">
         <img src="posters/customer-churn-prediction-retention-analytics.png" alt="Customer Churn Prediction poster">
         <div class="card-body"><h3>Customer Churn Prediction</h3><p>Analytics + ML &bull; Retention</p><span>4,500 customers &bull; CV ROC-AUC 0.7822</span></div>
+      </article>
+      <article class="card" onclick="openModal(7)" tabindex="0">
+        <img src="posters/ecommerce-sales-forecasting-inventory-analytics.png" alt="E-commerce Sales Forecasting and Inventory Analytics poster">
+        <div class="card-body"><h3>E-commerce Sales Forecasting</h3><p>Forecasting &bull; Inventory Analytics</p><span>730 days &bull; 5 categories</span></div>
       </article>
     </div>
   </section>
@@ -266,6 +274,18 @@
     <p class="honest">Real work: her Aston coursework notebook, results taken from its own outputs.</p>
     <div class="chips small"><span class="chip">ESM-2</span><span class="chip">Scikit-learn</span><span class="chip">XGBoost</span><span class="chip">LightGBM</span></div>
     <a class="btn btn-primary" href="https://github.com/ramyakrishna-p/linear-b-cell-epitope-prediction" target="_blank" rel="noopener">View on GitHub</a>
+  </div>
+</div>
+
+<div class="modal" id="modal-7" role="dialog" aria-modal="true">
+  <div class="modal-box"><button class="modal-close" onclick="closeModal(7)" aria-label="Close">&times;</button>
+    <h2>E-commerce Sales Forecasting &amp; Inventory Analytics</h2>
+    <p class="modal-cat">Data Analytics &bull; Forecasting &bull; Inventory</p>
+    <p>Demand forecasting and inventory analytics over two years of daily e-commerce sales: models are compared on a proper time-based holdout, the next 28 days of revenue are forecast, and demand history is turned into safety stock and reorder points per category.</p>
+    <h3>By the numbers</h3><ul class="numbers"><li>Holdout MAPE: 12.17% (Gradient Boosting) vs 22.76% (seasonal-naive)</li><li>Next 28 days forecast revenue: £1,121,640</li><li>Dataset: 730 days, 5 categories, 402,097 orders</li><li>Inventory: reorder points for 5 categories at a 95% service level</li></ul>
+    <p class="honest">Data: synthetic e-commerce data, generated and labelled as synthetic in the repository.</p>
+    <div class="chips small"><span class="chip">Python</span><span class="chip">Pandas</span><span class="chip">Scikit-learn</span><span class="chip">SQL</span><span class="chip">Time-Series Forecasting</span></div>
+    <a class="btn btn-primary" href="https://github.com/ramyakrishna-p/ecommerce-sales-forecasting-inventory-analytics" target="_blank" rel="noopener">View on GitHub</a>
   </div>
 </div>
 
