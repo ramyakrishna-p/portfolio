@@ -53,3 +53,35 @@ Project-folder check: none of the individual project folders under `~/workspace/
 ## Verification
 - All 7 new posters open in PIL as PNG at exactly 800x1000.
 - Visually spot-checked: retail (supermarket photo visible mid-frame, all text legible over the scrim), microplastic (scientist and microscope fill the frame, dissertation metric readable), epitope (protein render behind the text, long metric line fits on one line).
+
+---
+
+# Poster Style Change — 2026-11-15
+
+All 8 posters (the 7 above plus ecommerce-sales-forecasting-inventory-analytics.png) regenerated as **cinematic gradient art**, replacing the photo-based versions. This matches the style of Jagadeeswara's own portfolio, where every project card uses a CSS `art` field with a unique diagonal 3-stop linear-gradient (135deg, dark base → mid tone → vivid accent) and no photographs at all.
+
+Each poster is composited locally with PIL at exactly 800x1000:
+- Diagonal linear gradient at 135deg (top-left dark → bottom-right vivid), mid stop at 57%
+- Soft radial glow of the accent colour near the centre-right, plus a subtle dark vignette at the edges, so the art feels cinematic rather than flat
+- No photos, no charts, no icons
+- Same layout and text as the photo posters: thin white inset border, accent rule in the project's vivid colour, bold white title, category line, pale-yellow metric line, footer "RAMYA • DATA ANALYST"
+
+The photo-based versions are backed up in `posters-photo-backup/` (copy, not move). The earlier plain-gradient versions remain in `posters-plain-backup/`. Nothing was pushed to GitHub; this is a local change only.
+
+## Palettes (dark → mid → vivid)
+
+| Poster | Palette | Final size |
+| --- | --- | --- |
+| retail-sales-performance-customer-segmentation.png | #160a2e → #5b21b6 → #f59e0b | 938,355 bytes |
+| marketing-campaign-analytics-ab-testing.png | #1f0a14 → #9d174d → #f472b6 | 934,316 bytes |
+| automated-kpi-reporting-pipeline.png | #0f172a → #0369a1 → #38bdf8 | 933,958 bytes |
+| customer-churn-prediction-retention-analytics.png | #0a1f1a → #0f766e → #2dd4bf | 929,299 bytes |
+| microplastic-segmentation.png | #041a2e → #075985 → #22d3ee | 936,281 bytes |
+| product-recommendation-engine.png | #1e1b4b → #4c1d95 → #a78bfa | 932,754 bytes |
+| linear-b-cell-epitope-prediction.png | #06281f → #065f46 → #34d399 | 935,541 bytes |
+| ecommerce-sales-forecasting-inventory-analytics.png | #1c1410 → #92400e → #f59e0b | 941,681 bytes |
+
+## Verification
+- All 8 new posters open in PIL as PNG at exactly 800x1000, RGB.
+- Visually spot-checked: retail (deep violet melting into warm amber with a soft amber glow centre-right; amber accent rule; title, RFM category line and £360,215 metric crisp against the darkened top-left), microplastic (deep navy through sky blue to cyan with a cyan glow on the right; dissertation metric fully legible), forecasting (dark brown through burnt orange to amber; "Forecasting & Inventory" fits inside the border; MAPE metric legible over the orange).
+- Zero photographic content in any poster — backgrounds are pure gradient, glow and vignette.
